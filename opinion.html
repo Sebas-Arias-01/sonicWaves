@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deja tu Opinión - SonicWaves</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__container">
+            <h1 class="header__logo">SonicWaves</h1>
+            <nav class="header__nav nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html" class="nav__link">Inicio</a></li>
+                    <li class="nav__item"><a href="introduccion.html" class="nav__link">Introducción</a></li>
+                    <li class="nav__item"><a href="albumes.html" class="nav__link">Álbumes</a></li>
+                    <li class="nav__item nav__item--dropdown dropdown">
+                        <a href="generos.html" class="nav__link dropdown__toggle">Géneros</a>
+                        <div class="dropdown__content">
+                            <a href="pop.html" class="dropdown__link">Pop</a>
+                            <a href="rock.html" class="dropdown__link">Rock</a>
+                            <a href="electronica.html" class="dropdown__link">Electrónica</a>
+                            <a href="hiphop.html" class="dropdown__link">Hip Hop</a>
+                        </div>
+                    </li>
+                    <li class="nav__item"><a href="artistas.html" class="nav__link">Artistas</a></li>
+                    <li class="nav__item"><a href="colaboraciones.html" class="nav__link">Colaboraciones</a></li>
+                    <li class="nav__item"><a href="nosotros.html" class="nav__link">Nosotros</a></li>
+                    <li class="nav__item"><a href="contacto.html" class="nav__link">Contacto</a></li>
+                    <li class="nav__item"><a href="opinion.html" class="nav__link nav__link--active">Opinión</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <section class="opinion-hero">
+            <div class="opinion-hero__container container">
+                <h2 class="opinion-hero__title">Tu Voz Resuena en SonicWaves</h2>
+                <p class="opinion-hero__subtitle">Tu opinión es la melodía que nos impulsa a mejorar. ¡Queremos escucharte!</p>
+            </div>
+        </section>
+
+        <section class="opinion-form-section">
+            <div class="opinion-form-section__container container">
+                <h3 class="opinion-form-section__title">Cuéntanos tu Experiencia</h3>
+                <p class="opinion-form-section__intro-text">Ya sea una sugerencia, una crítica constructiva o simplemente para compartir cuánto amas la música, cada comentario nos ayuda a crecer y a afinar nuestra armonía.</p>
+                <form class="opinion-form" action="#" method="POST">
+                    <div class="opinion-form__group form-group">
+                        <label for="name" class="form-group__label">Tu Nombre (opcional):</label>
+                        <input type="text" id="name" name="name" placeholder="Nombre o Nickname" class="form-group__input">
+                    </div>
+                    <div class="opinion-form__group form-group">
+                        <label for="email" class="form-group__label">Tu Correo Electrónico (opcional):</label>
+                        <input type="email" id="email" name="email" placeholder="ejemplo@dominio.com" class="form-group__input">
+                        <small class="form-group__hint">No compartiremos tu correo electrónico con terceros.</small>
+                    </div>
+                    <div class="opinion-form__group form-group">
+                        <label for="feedbackType" class="form-group__label">Tipo de Comentario:</label>
+                        <select id="feedbackType" name="feedbackType" class="form-group__select">
+                            <option value="general">Comentario General</option>
+                            <option value="sugerencia">Sugerencia</option>
+                            <option value="problema">Reportar un Problema</option>
+                            <option value="elogio">Elogio / Agradecimiento</option>
+                            <option value="colaboracion">Interés en Colaboración</option>
+                        </select>
+                    </div>
+                    <div class="opinion-form__group form-group">
+                        <label for="rating" class="form-group__label">¿Qué tan satisfecho estás con SonicWaves?</label>
+                        <div class="form-group__rating-stars rating-stars">
+                            <input type="radio" id="star5" name="rating" value="5" required class="rating-stars__input"><label for="star5" title="Excelente" class="rating-stars__label">⭐</label>
+                            <input type="radio" id="star4" name="rating" value="4" class="rating-stars__input"><label for="star4" title="Muy Bueno" class="rating-stars__label">⭐</label>
+                            <input type="radio" id="star3" name="rating" value="3" class="rating-stars__input"><label for="star3" title="Bueno" class="rating-stars__label">⭐</label>
+                            <input type="radio" id="star2" name="rating" value="2" class="rating-stars__input"><label for="star2" title="Regular" class="rating-stars__label">⭐</label>
+                            <input type="radio" id="star1" name="rating" value="1" class="rating-stars__input"><label for="star1" title="Malo" class="rating-stars__label">⭐</label>
+                        </div>
+                    </div>
+                    <div class="opinion-form__group form-group">
+                        <label for="message" class="form-group__label">Tu Opinión:</label>
+                        <textarea id="message" name="message" rows="8" required placeholder="Escribe aquí tu opinión, sugerencia o comentario..." class="form-group__textarea"></textarea>
+                    </div>
+                    <button type="submit" class="opinion-form__submit-button button button--main">Enviar Opinión</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="testimonials">
+            <div class="testimonials__container container">
+                <h3 class="testimonials__title">Lo que la Comunidad Dice de Nosotros</h3>
+                <p class="testimonials__intro-text">Nos enorgullece compartir algunas de las opiniones que nos inspiran a seguir mejorando cada día.</p>
+                <div class="testimonials__grid testimonial-grid">
+                    <div class="testimonial-grid__item testimonial-item">
+                        <p class="testimonial-item__quote">"SonicWaves me ha permitido descubrir artistas increíbles que no conocía. ¡Es mi plataforma de música favorita ahora mismo!"</p>
+                        <p class="testimonial-item__author">- Ana P., Melómana</p>
+                    </div>
+                    <div class="testimonial-grid__item testimonial-item">
+                        <p class="testimonial-item__quote">"Como artista emergente, encontrar una plataforma que realmente apoye y dé visibilidad a los nuevos talentos es invaluable. Gracias, SonicWaves."</p>
+                        <p class="testimonial-item__author">- Leo D., Músico Indie</p>
+                    </div>
+                    <div class="testimonial-grid__item testimonial-item">
+                        <p class="testimonial-item__quote">"La sección de 'Colaboraciones' es fascinante. Siempre encuentro algo nuevo y emocionante para escuchar. ¡Gran trabajo!"</p>
+                        <p class="testimonial-item__author">- Carlos M., Entusiasta Musical</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__container container">
+            <p class="footer__copyright">&copy; 2025 SonicWaves. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Álbumes - SonicWaves</title>
+</head>
+<body>
+
+    <header class="header">
+        <div class="header__container">
+            <h1 class="header__logo">SonicWaves</h1>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html" class="nav__link">Inicio</a></li>
+                    <li class="nav__item"><a href="introduccion.html" class="nav__link">Introducción</a></li>
+                    <li class="nav__item"><a href="albumes.html" class="nav__link nav__link--active">Álbumes</a></li>
+                    <li class="nav__item nav__item--dropdown">
+                        <a href="generos.html" class="nav__link">Géneros</a>
+                        <div class="dropdown-menu">
+                            <a href="pop.html" class="dropdown-menu__item">Pop</a>
+                            <a href="rock.html" class="dropdown-menu__item">Rock</a>
+                            <a href="electronica.html" class="dropdown-menu__item">Electrónica</a>
+                            <a href="hiphop.html" class="dropdown-menu__item">Hip Hop</a>
+                        </div>
+                    </li>
+                    <li class="nav__item"><a href="artistas.html" class="nav__link">Artistas</a></li>
+                    <li class="nav__item"><a href="colaboraciones.html" class="nav__link">Colaboraciones</a></li>
+                    <li class="nav__item"><a href="nosotros.html" class="nav__link">Nosotros</a></li>
+                    <li class="nav__item"><a href="contacto.html" class="nav__link">Contacto</a></li>
+                    <li class="nav__item"><a href="opinion.html" class="nav__link">Opinión</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="top-albums">
+            <div class="top-albums__container">
+                <h2 class="top-albums__title">Nuestros Álbumes Destacados</h2>
+                <p class="top-albums__description">Esta sección está diseñada para mostrar una colección de álbumes. A continuación se muestra la estructura que debe seguir cada elemento.</p>
+                
+                <div class="top-albums__list">
+
+                    <div class="album-card">
+                        <span class="album-card__rank">[Posición]</span>
+                        <div class="album-card__cover-wrapper">
+                            <img src="path/to/image.jpg" alt="Portada del álbum" class="album-card__cover">
+                        </div>
+                        <div class="album-card__details">
+                            <h3 class="album-card__title">[Nombre del Álbum]</h3>
+                            <p class="album-card__artist">Artista: [Nombre del Artista]</p>
+                            <p class="album-card__info">Año: [Año de lanzamiento]</p>
+                            <p class="album-card__info">Género: [Género Principal]</p>
+                            <p class="album-card__description">[Breve descripción del álbum o de una canción destacada].</p>
+                        </div>
+                    </div>
+                    
+                    <div class="album-card">
+                        <span class="album-card__rank">[Posición]</span>
+                        <div class="album-card__cover-wrapper">
+                            <img src="path/to/image2.jpg" alt="Portada del álbum" class="album-card__cover">
+                        </div>
+                        <div class="album-card__details">
+                            <h3 class="album-card__title">[Nombre del Álbum]</h3>
+                            <p class="album-card__artist">Artista: [Nombre del Artista]</p>
+                            <p class="album-card__info">Año: [Año de lanzamiento]</p>
+                            <p class="album-card__info">Género: [Género Principal]</p>
+                            <p class="album-card__description">[Breve descripción del álbum o de una canción destacada].</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__container">
+            <p class="footer__text">&copy; 2025 SonicWaves. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

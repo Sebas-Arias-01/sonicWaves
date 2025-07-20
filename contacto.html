@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - SonicWaves</title>
+    <link rel="stylesheet" href="styles.css"> <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Orbitron:wght@500&display=swap" rel="stylesheet">
+    </head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <h1 class="logo">SonicWaves</h1>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="introduccion.html">Introducción</a></li>
+                    <li><a href="albumes.html">Álbumes</a></li>
+                    <li class="dropdown">
+                        <a href="generos.html">Géneros</a>
+                        <div class="dropdown-content">
+                            <a href="pop.html">Pop</a>
+                            <a href="rock.html">Rock</a>
+                            <a href="electronica.html">Electrónica</a>
+                            <a href="hiphop.html">Hip Hop</a>
+                        </div>
+                    </li>
+                    <li><a href="artistas.html">Artistas</a></li>
+                    <li><a href="colaboraciones.html">Colaboraciones</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="contacto.html" class="active">Contacto</a></li> <li><a href="opinion.html">Opinión</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="contact-hero" class="hero-section text-center">
+            <div class="container">
+                <h2>Conéctate con SonicWaves</h2>
+                <p class="subtitle">¿Tienes alguna pregunta, idea o simplemente quieres saludar? ¡Estamos aquí para escucharte!</p>
+            </div>
+        </section>
+
+        <section id="contact-info" class="content-section">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-method">
+                        <div class="icon-circle">✉️</div>
+                        <h3>Envíanos un Correo</h3>
+                        <p>Para consultas generales, soporte o feedback.</p>
+                        <a href="mailto:info@sonicwaves.com" class="contact-link">info@sonicwaves.com</a>
+                    </div>
+
+                    <div class="contact-method">
+                        <div class="icon-circle">🤝</div>
+                        <h3>Colaboraciones y Artistas</h3>
+                        <p>Si eres artista o buscas una colaboración, ¡hablemos!</p>
+                        <a href="mailto:artistas@sonicwaves.com" class="contact-link">artistas@sonicwaves.com</a>
+                    </div>
+
+                    <div class="contact-method">
+                        <div class="icon-circle">📍</div>
+                        <h3>Nuestra Oficina Principal</h3>
+                        <p>Visítanos en Tunja, Boyacá o envíanos correspondencia.</p>
+                        <p>Transversal 10 #688 - 3341, Ciudad Tunja, </p>
+                        <p>País Colombia</p>
+                    </div>
+
+                    <div class="contact-method">
+                        <div class="icon-circle">📱</div>
+                        <h3>Síguenos en Redes</h3>
+                        <p>Mantente al día con nuestras noticias y eventos.</p>
+                        <div class="social-links">
+                            <a href="https://open.spotify.com/intl-es" target="_blank" aria-label="Facebook">Facebook</a>
+                            <a href="https://music.apple.com/es/new" target="_blank" aria-label="Twitter">Twitter</a>
+                            <a href="https://soundcloud.com/" target="_blank" aria-label="Instagram">Instagram</a>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact-form-section" class="content-section bg-dark-alt">
+            <div class="container">
+                <h3>Envíanos un Mensaje Directo</h3>
+                <p class="intro-text">Usa el siguiente formulario para enviarnos tu consulta directamente. Nos pondremos en contacto contigo lo antes posible.</p>
+                <form class="contact-form" action="#" method="POST">
+                    <div class="form-group">
+                        <label for="name">Tu Nombre:</label>
+                        <input type="text" id="name" name="name" required placeholder="Nombre Completo">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Tu Correo Electrónico:</label>
+                        <input type="email" id="email" name="email" required placeholder="ejemplo@dominio.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Asunto:</label>
+                        <input type="text" id="subject" name="subject" required placeholder="Consulta sobre...">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Tu Mensaje:</label>
+                        <textarea id="message" name="message" rows="6" required placeholder="Escribe tu mensaje aquí..."></textarea>
+                    </div>
+                    <button type="submit" class="btn-main">Enviar Mensaje</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2025 SonicWaves. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
