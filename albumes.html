@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Álbumes - SonicWaves</title>
+    <link rel="stylesheet" href="styles.css"> 
 </head>
 <body>
 
@@ -14,14 +15,14 @@
                 <ul class="nav__list">
                     <li class="nav__item"><a href="index.html" class="nav__link">Inicio</a></li>
                     <li class="nav__item"><a href="introduccion.html" class="nav__link">Introducción</a></li>
-                    <li class="nav__item"><a href="albumes.html" class="nav__link nav__link--active">Álbumes</a></li>
-                    <li class="nav__item nav__item--dropdown">
-                        <a href="generos.html" class="nav__link">Géneros</a>
-                        <div class="dropdown-menu">
-                            <a href="pop.html" class="dropdown-menu__item">Pop</a>
-                            <a href="rock.html" class="dropdown-menu__item">Rock</a>
-                            <a href="electronica.html" class="dropdown-menu__item">Electrónica</a>
-                            <a href="hiphop.html" class="dropdown-menu__item">Hip Hop</a>
+                    <li class="nav__item"><a href="AlbumPictures.html" class="nav__link nav__link--active">Álbumes</a></li>
+                    <li class="nav__item nav__item--dropdown dropdown">
+                        <a href="generos.html" class="nav__link dropdown__toggle">Géneros</a>
+                        <div class="dropdown__menu">
+                            <a href="pop.html" class="dropdown__menu-item">Pop</a>
+                            <a href="rock.html" class="dropdown__menu-item">Rock</a>
+                            <a href="electronica.html" class="dropdown__menu-item">Electrónica</a>
+                            <a href="hiphop.html" class="dropdown__menu-item">Hip Hop</a>
                         </div>
                     </li>
                     <li class="nav__item"><a href="artistas.html" class="nav__link">Artistas</a></li>
@@ -34,39 +35,131 @@
         </div>
     </header>
 
-    <main>
+    <main class="main-content">
         <section class="top-albums">
-            <div class="top-albums__container">
-                <h2 class="top-albums__title">Nuestros Álbumes Destacados</h2>
-                <p class="top-albums__description">Esta sección está diseñada para mostrar una colección de álbumes. A continuación se muestra la estructura que debe seguir cada elemento.</p>
+            <div class="top-albums__container container">
+                <h2 class="top-albums__title">Los 10 Álbumes Más Escuchados Globalmente</h2>
+                <p class="top-albums__description">Descubre los álbumes que están marcando el ritmo en el mundo de la música, con miles de millones de reproducciones. ¡Aquí tienes el top actual!</p>
                 
-                <div class="top-albums__list">
+                <div class="top-albums__list album-list">
 
-                    <div class="album-card">
-                        <span class="album-card__rank">[Posición]</span>
+                    <div class="album-list__item album-card">
+                        <span class="album-card__rank">1.</span>
                         <div class="album-card__cover-wrapper">
-                            <img src="path/to/image.jpg" alt="Portada del álbum" class="album-card__cover">
+                            <img src="AlbumPictures/1.jpeg" alt="Portada Un Verano Sin Ti" class="album-card__cover">
                         </div>
                         <div class="album-card__details">
-                            <h3 class="album-card__title">[Nombre del Álbum]</h3>
-                            <p class="album-card__artist">Artista: [Nombre del Artista]</p>
-                            <p class="album-card__info">Año: [Año de lanzamiento]</p>
-                            <p class="album-card__info">Género: [Género Principal]</p>
-                            <p class="album-card__description">[Breve descripción del álbum o de una canción destacada].</p>
+                            <h3 class="album-card__title">Un Verano Sin Ti</h3>
+                            <p class="album-card__artist">Artista: Bad Bunny</p>
+                            <p class="album-card__info album-card__info--streams">14,235,527,995 reproducciones</p>
+                            </div>
+                    </div>
+                    
+                    <div class="album-list__item album-card">
+                        <span class="album-card__rank">2.</span>
+                        <div class="album-card__cover-wrapper">
+                            <img src="AlbumPictures/2.jpeg" alt="Portada Divide" class="album-card__cover">
+                        </div>
+                        <div class="album-card__details">
+                            <h3 class="album-card__title">÷ (Deluxe)</h3>
+                            <p class="album-card__artist">Artista: Ed Sheeran</p>
+                            <p class="album-card__info album-card__info--streams">13,759,389,302 reproducciones</p>
                         </div>
                     </div>
                     
-                    <div class="album-card">
-                        <span class="album-card__rank">[Posición]</span>
+                    <div class="album-list__item album-card">
+                        <span class="album-card__rank">3.</span>
                         <div class="album-card__cover-wrapper">
-                            <img src="path/to/image2.jpg" alt="Portada del álbum" class="album-card__cover">
+                            <img src="AlbumPictures/3.jpeg" alt="Portada Starboy" class="album-card__cover">
                         </div>
                         <div class="album-card__details">
-                            <h3 class="album-card__title">[Nombre del Álbum]</h3>
-                            <p class="album-card__artist">Artista: [Nombre del Artista]</p>
-                            <p class="album-card__info">Año: [Año de lanzamiento]</p>
-                            <p class="album-card__info">Género: [Género Principal]</p>
-                            <p class="album-card__description">[Breve descripción del álbum o de una canción destacada].</p>
+                            <h3 class="album-card__title">Starboy (Deluxe)</h3>
+                            <p class="album-card__artist">Artista: The Weeknd</p>
+                            <p class="album-card__info album-card__info--streams">11,586,303,678 reproducciones</p>
+                        </div>
+                    </div>
+
+                    <div class="album-list__item album-card">
+                        <span class="album-card__rank">4.</span>
+                        <div class="album-card__cover-wrapper">
+                            <img src="AlbumPictures/4.jpg" alt="Portada Hollywood's Bleeding" class="album-card__cover">
+                        </div>
+                        <div class="album-card__details">
+                            <h3 class="album-card__title">Hollywood's Bleeding</h3>
+                            <p class="album-card__artist">Artista: Post Malone</p>
+                            <p class="album-card__info album-card__info--streams">11,433,905,637 reproducciones</p>
+                        </div>
+                    </div>
+                    
+                    <div class="album-list__item album-card">
+                        <span class="album-card__rank">5.</span>
+                        <div class="album-card__cover-wrapper">
+                            <img src="AlbumPictures/5.jpeg" alt="Portada Dua Lipa Complete Edition" class="album-card__cover">
+                        </div>
+                        <div class="album-card__details">
+                            <h3 class="album-card__title">Dua Lipa (Complete Edition)</h3>
+                            <p class="album-card__artist">Artista: Dua Lipa</p>
+                            <p class="album-card__info album-card__info--streams">11,345,579,965 reproducciones</p>
+                        </div>
+                    </div>
+                    
+                    <div class="album-list__item album-card">
+                        <span class="album-card__rank">6.</span>
+                        <div class="album-card__cover-wrapper">
+                            <img src="AlbumPictures/6.jpeg" alt="Portada Beerbongs & Bentleys" class="album-card__cover">
+                        </div>
+                        <div class="album-card__details">
+                            <h3 class="album-card__title">beerbongs & bentleys</h3>
+                            <p class="album-card__artist">Artista: Post Malone</p>
+                            <p class="album-card__info album-card__info--streams">11,114,317,518 reproducciones</p>
+                        </div>
+                    </div>
+                    
+                    <div class="album-list__item album-card">
+                        <span class="album-card__rank">7.</span>
+                        <div class="album-card__cover-wrapper">
+                            <img src="AlbumPictures/7.jpeg" alt="Portada Future Nostalgia" class="album-card__cover">
+                        </div>
+                        <div class="album-card__details">
+                            <h3 class="album-card__title">Future Nostalgia (The Moonlight Edition)</h3>
+                            <p class="album-card__artist">Artista: Dua Lipa</p>
+                            <p class="album-card__info album-card__info--streams">11,111,376,795 reproducciones</p>
+                        </div>
+                    </div>
+                    
+                    <div class="album-list__item album-card">
+                        <span class="album-card__rank">8.</span>
+                        <div class="album-card__cover-wrapper">
+                            <img src="AlbumPictures/8.jpeg" alt="Portada After Hours" class="album-card__cover">
+                        </div>
+                        <div class="album-card__details">
+                            <h3 class="album-card__title">After Hours (Deluxe)</h3>
+                            <p class="album-card__artist">Artista: The Weeknd</p>
+                            <p class="album-card__info album-card__info--streams">10,688,155,269 reproducciones</p>
+                        </div>
+                    </div>
+                    
+                    <div class="album-list__item album-card">
+                        <span class="album-card__rank">9.</span>
+                        <div class="album-card__cover-wrapper">
+                            <img src="AlbumPictures/9.jpeg" alt="Portada SOUR" class="album-card__cover">
+                        </div>
+                        <div class="album-card__details">
+                            <h3 class="album-card__title">SOUR</h3>
+                            <p class="album-card__artist">Artista: Olivia Rodrigo</p>
+                            <p class="album-card__info album-card__info--streams">10,389,880,399 reproducciones</p>
+                        </div>
+                    </div>
+                    
+                    <div class="album-list__item album-card">
+                        <span class="album-card__rank">10.</span>
+                        <div class="album-card__cover-wrapper">
+                            <img src="AlbumPictures/10.jpeg" alt="Portada WHEN WE ALL FALL ASLEEP, WHERE DO WE GO?" class="album-card__cover">
+                        </div>
+                        <div class="album-card__details">
+                            <h3 class="album-card__title">WHEN WE ALL FALL ASLEEP, WHERE DO WE GO?</h3>
+                            <p class="album-card__artist">Artista: Billie Eilish</p>
+                            <p class="album-card__info album-card__info--streams">10,119,933,483 reproducciones</p>
                         </div>
                     </div>
 

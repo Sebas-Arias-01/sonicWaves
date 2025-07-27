@@ -1,172 +1,229 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Colaboraciones Destacadas - SonicWaves</title>
-    <link rel="stylesheet" href="styles.css"> <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Orbitron:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
-    <header class="main-header">
-        <div class="container">
-            <h1 class="logo">SonicWaves</h1>
-            <nav class="main-nav">
-                <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="introduccion.html">Introducción</a></li>
-                    <li><a href="albumes.html">Álbumes</a></li>
-                    <li class="dropdown">
-                        <a href="generos.html">Géneros</a>
-                        <div class="dropdown-content">
-                            <a href="pop.html">Pop</a>
-                            <a href="rock.html">Rock</a>
-                            <a href="electronica.html">Electrónica</a>
-                            <a href="hiphop.html">Hip Hop</a>
+    <header class="header">
+        <div class="header__container container">
+            <h1 class="header__logo">SonicWaves</h1>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="introduccion.html" class="nav__link">Introducción</a></li>
+                    <li class="nav__item"><a href="albumes.html" class="nav__link">Álbumes</a></li>
+                    <li class="nav__item nav__item--dropdown dropdown"> <a href="generos.html"
+                            class="nav__link dropdown__toggle">Géneros</a>
+                        <div class="dropdown__menu"> <a href="pop.html" class="dropdown__menu-item">Pop</a>
+                            <a href="rock.html" class="dropdown__menu-item">Rock</a>
+                            <a href="electronica.html" class="dropdown__menu-item">Electrónica</a>
+                            <a href="hiphop.html" class="dropdown__menu-item">Hip Hop</a>
                         </div>
                     </li>
-                    <li><a href="artistas.html">Artistas</a></li>
-                    <li><a href="colaboraciones.html" class="active">Colaboraciones</a></li> <li><a href="nosotros.html">Nosotros</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                    <li><a href="opinion.html">Opinión</a></li>
+                    <li class="nav__item"><a href="artistas.html" class="nav__link">Artistas</a></li>
+                    <li class="nav__item"><a href="colaboraciones.html" class="nav__link">Colaboraciones</a></li>
+                    <li class="nav__item"><a href="nosotros.html" class="nav__link">Nosotros</a></li>
+                    <li class="nav__item"><a href="contacto.html" class="nav__link">Contacto</a></li>
+                    <li class="nav__item"><a href="opinion.html" class="nav__link">Opinión</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <main>
-        <section id="featured-collaborations" class="content-section">
-            <div class="container">
-                <h2>Colaboraciones Musicales Más Influyentes</h2>
-                <p>Descubre las uniones de talentos que han dado lugar a éxitos globales y han marcado la industria musical.</p>
+    <main class="main-content">
+        <section class="collaborations-section">
+            <div class="collaborations-section__container container">
+                <h2 class="collaborations-section__title">Colaboraciones Musicales Más Influyentes</h2>
+                <p class="collaborations-section__description">Descubre las uniones de talentos que han dado lugar a
+                    éxitos globales y han marcado la industria musical.</p>
 
                 <div class="collaboration-list">
-                    <div class="collaboration-item">
-                        <div class="collaboration-photo-container">
-                            <img src="picturesC/1.jpeg" alt="Portada Gata Only" class="collaboration-photo">
-                        </div>
-                        <div class="collaboration-details">
-                            <h3>Gata Only</h3>
-                            <p><strong>Artistas:</strong> FloyyMenor & Cris MJ</p>
-                            <p><strong>Año de Lanzamiento:</strong> 2024</p>
-                            <p><strong>Género:</strong> Reggaetón, Latin Urban</p>
-                            <p class="notes">Notas: Este tema se convirtió en un fenómeno global, dominando las listas y alcanzando un estatus viral. Destacó en el Top 5 global de Spotify Wrapped 2024, lo que indica su inmensa popularidad y audiencia generalizada durante todo el año. Es un ejemplo del continuo alcance global de la música urbana latina.</p>
-                        </div>
-                    </div>
-
-                    <div class="collaboration-item">
-                        <div class="collaboration-photo-container">
-                            <img src="picturesC/2.jpeg" alt="Portada Die With A Smile" class="collaboration-photo">
-                        </div>
-                        <div class="collaboration-details">
-                            <h3>Die With A Smile</h3>
-                            <p><strong>Artistas:</strong> Bruno Mars & Lady Gaga</p>
-                            <p><strong>Año de Lanzamiento:</strong> 2024</p>
-                            <p><strong>Género:</strong> Pop, Soul, R&B</p>
-                            <p class="notes">Notas: Esta colaboración entre dos artistas muy aclamados se convirtió en un éxito significativo, liderando las listas de canciones virales y más compartidas en redes sociales en 2024. Este tipo de colaboración de alto perfil a menudo genera un inmenso revuelo debido al poder combinado de las estrellas y la fusión de sus distintos estilos musicales.</p>
+                    <div class="collaboration-list__item collaboration-card">
+                        <div class="collaboration-card__photo-wrapper"> <img src="ColaborationsPictures/1.jpeg"
+                                alt="Portada Gata Only" class="collaboration-card__photo"> </div>
+                        <div class="collaboration-card__details">
+                            <h3 class="collaboration-card__title">Gata Only</h3>
+                            <p class="collaboration-card__info"><strong>Artistas:</strong> FloyyMenor & Cris MJ</p>
+                            <p class="collaboration-card__info"><strong>Año de Lanzamiento:</strong> 2024</p>
+                            <p class="collaboration-card__info"><strong>Género:</strong> Reggaetón, Latin Urban</p>
+                            <p class="collaboration-card__notes">Notas: Este tema se convirtió en un fenómeno global,
+                                dominando las listas y alcanzando un estatus viral. Destacó en el Top 5 global de
+                                Spotify Wrapped 2024, lo que indica su inmensa popularidad y audiencia generalizada
+                                durante todo el año. Es un ejemplo del continuo alcance global de la música urbana
+                                latina.</p>
                         </div>
                     </div>
 
-                    <div class="collaboration-item">
-                        <div class="collaboration-photo-container">
-                            <img src="picturesC/3.jpeg" alt="Portada One Of The Girls" class="collaboration-photo">
+                    <div class="collaboration-list__item collaboration-card">
+                        <div class="collaboration-card__photo-wrapper">
+                            <img src="ColaborationsPictures/2.jpeg" alt="Portada Die With A Smile"
+                                class="collaboration-card__photo">
                         </div>
-                        <div class="collaboration-details">
-                            <h3>One Of The Girls</h3>
-                            <p><strong>Artistas:</strong> The Weeknd (feat. JENNIE of BLACKPINK & Lily Rose Depp)</p>
-                            <p><strong>Año de Lanzamiento:</strong> 2023 (parte de la banda sonora de The Idol)</p>
-                            <p><strong>Género:</strong> Pop, R&B</p>
-                            <p class="notes">Notas: Esta canción fue incluida en el Top 10 global de Spotify Wrapped 2024. Su popularidad se atribuye a la fusión de elementos pop y R&B, la participación del icono musical global Jennie de BLACKPINK, y su conexión con la serie de HBO "The Idol", donde The Weeknd y Lily-Rose Depp fueron actores principales.</p>
-                        </div>
-                    </div>
-
-                    <div class="collaboration-item">
-                        <div class="collaboration-photo-container">
-                            <img src="picturesC/4.jpeg" alt="Portada BIRDS OF A FEATHER" class="collaboration-photo">
-                        </div>
-                        <div class="collaboration-details">
-                            <h3>BIRDS OF A FEATHER</h3>
-                            <p><strong>Artista:</strong> Billie Eilish</p>
-                            <p><strong>Año de Lanzamiento:</strong> 2024 (del álbum Hit Me Hard and Soft)</p>
-                            <p><strong>Género:</strong> Pop, Alternative Pop</p>
-                            <p class="notes">Notas: Esta canción fue reconocida por Spotify como una de las más compartidas del año. Billie Eilish es conocida por su estilo distintivo, a menudo introspectivo y emocionalmente resonante, que conecta fuertemente con los oyentes y fomenta el compartir en plataformas sociales. Su inclusión en las listas de Spotify Wrapped destaca su impacto cultural.</p>
+                        <div class="collaboration-card__details">
+                            <h3 class="collaboration-card__title">Die With A Smile</h3>
+                            <p class="collaboration-card__info"><strong>Artistas:</strong> Bruno Mars & Lady Gaga</p>
+                            <p class="collaboration-card__info"><strong>Año de Lanzamiento:</strong> 2024</p>
+                            <p class="collaboration-card__info"><strong>Género:</strong> Pop, Soul, R&B</p>
+                            <p class="collaboration-card__notes">Notas: Esta colaboración entre dos artistas muy
+                                aclamados se convirtió en un éxito significativo, liderando las listas de canciones
+                                virales y más compartidas en redes sociales en 2024. Este tipo de colaboración de alto
+                                perfil a menudo genera un inmenso revuelo debido al poder combinado de las estrellas y
+                                la fusión de sus distintos estilos musicales.</p>
                         </div>
                     </div>
 
-                    <div class="collaboration-item">
-                        <div class="collaboration-photo-container">
-                            <img src= "picturesC/5.png" alt="Portada Harley Quinn" class="collaboration-photo">
+                    <div class="collaboration-list__item collaboration-card">
+                        <div class="collaboration-card__photo-wrapper">
+                            <img src="ColaborationsPictures/3.jpeg" alt="Portada One Of The Girls"
+                                class="collaboration-card__photo">
                         </div>
-                        <div class="collaboration-details">
-                            <h3>Harley Quinn</h3>
-                            <p><strong>Artistas:</strong> Fuerza Regida & Marshmello</p>
-                            <p><strong>Año de Lanzamiento:</strong> 2024</p>
-                            <p><strong>Género:</strong> Corridos Tumbados, EDM, Latin Urban</p>
-                            <p class="notes">Notas: Esta colaboración fue un éxito significativo en 2024, destacando por mezclar el género tradicional mexicano de corridos tumbados con música dance electrónica (EDM). Esta fusión de géneros ayudó a dominar las listas latinas, mostrando el creciente atractivo crossover de la música regional mexicana con otros sonidos globales.</p>
-                        </div>
-                    </div>
-
-                    <div class="collaboration-item">
-                        <div class="collaboration-photo-container">
-                            <img src= "picturesC/6.jpeg" alt="Portada Si no quieres no" class="collaboration-photo">
-                        </div>
-                        <div class="collaboration-details">
-                            <h3>Si no quieres no</h3>
-                            <p><strong>Artistas:</strong> Luis R Conriquez & Netón Vega</p>
-                            <p><strong>Año de Lanzamiento:</strong> 2024</p>
-                            <p><strong>Género:</strong> Regional Mexican, Corridos</p>
-                            <p class="notes">Notas: Esta colaboración ascendió al Top 10 de la lista Hot Latin Songs de Billboard en 2024. Es un claro ejemplo del continuo dominio y evolución del género regional mexicano, particularmente los corridos, que han experimentado un auge masivo en popularidad en los últimos años.</p>
+                        <div class="collaboration-card__details">
+                            <h3 class="collaboration-card__title">One Of The Girls</h3>
+                            <p class="collaboration-card__info"><strong>Artistas:</strong> The Weeknd (feat. JENNIE of
+                                BLACKPINK & Lily Rose Depp)</p>
+                            <p class="collaboration-card__info"><strong>Año de Lanzamiento:</strong> 2023 (parte de la
+                                banda sonora de The Idol)</p>
+                            <p class="collaboration-card__info"><strong>Género:</strong> Pop, R&B</p>
+                            <p class="collaboration-card__notes">Notas: Esta canción fue incluida en el Top 10 global de
+                                Spotify Wrapped 2024. Su popularidad se atribuye a la fusión de elementos pop y R&B, la
+                                participación del icono musical global Jennie de BLACKPINK, y su conexión con la serie
+                                de HBO "The Idol", donde The Weeknd y Lily-Rose Depp fueron actores principales.</p>
                         </div>
                     </div>
 
-                    <div class="collaboration-item">
-                        <div class="collaboration-photo-container">
-                            <img src= "picturesC/7.jpeg" alt="Portada Sweet Dreams" class="collaboration-photo">
+                    <div class="collaboration-list__item collaboration-card">
+                        <div class="collaboration-card__photo-wrapper">
+                            <img src="ColaborationsPictures/4.jpeg" alt="Portada BIRDS OF A FEATHER"
+                                class="collaboration-card__photo">
                         </div>
-                        <div class="collaboration-details">
-                            <h3>Sweet Dreams</h3>
-                            <p><strong>Artistas:</strong> j-hope (BTS) & Miguel</p>
-                            <p><strong>Año de Lanzamiento:</strong> 2025</p>
-                            <p><strong>Género:</strong> K-Pop, R&B, Pop</p>
-                            <p class="notes">Notas: Esta colaboración entre un destacado artista de K-Pop y un renombrado cantante de R&B tuvo un alto debut en la lista Billboard Hot 100. Este tipo de colaboraciones interculturales a menudo generan un interés significativo y éxito en las listas, uniendo diferentes bases de fans y estilos musicales.</p>
-                        </div>
-                    </div>
-
-                    <div class="collaboration-item">
-                        <div class="collaboration-photo-container">
-                            <img src= "picturesC/8.jpeg" alt="Portada APT." class="collaboration-photo">
-                        </div>
-                        <div class="collaboration-details">
-                            <h3>APT.</h3>
-                            <p><strong>Artistas:</strong> Rosé (BLACKPINK) & Bruno Mars</p>
-                            <p><strong>Año de Lanzamiento:</strong> 2024</p>
-                            <p><strong>Género:</strong> Pop, Soul, R&B</p>
-                            <p class="notes">Notas: Lanzada en 2024, esta canción mantuvo una fuerte presencia en las listas globales durante meses. Su éxito puede atribuirse a la potente combinación del atractivo global de Rosé en el K-Pop y la constante capacidad de Bruno Mars para crear éxitos, generando una mezcla de pop y soul que resonó con una amplia audiencia.</p>
+                        <div class="collaboration-card__details">
+                            <h3 class="collaboration-card__title">BIRDS OF A FEATHER</h3>
+                            <p class="collaboration-card__info"><strong>Artista:</strong> Billie Eilish</p>
+                            <p class="collaboration-card__info"><strong>Año de Lanzamiento:</strong> 2024 (del álbum Hit
+                                Me Hard and Soft)</p>
+                            <p class="collaboration-card__info"><strong>Género:</strong> Pop, Alternative Pop</p>
+                            <p class="collaboration-card__notes">Notas: Esta canción fue reconocida por Spotify como una
+                                de las más compartidas del año. Billie Eilish es conocida por su estilo distintivo, a
+                                menudo introspectivo y emocionalmente resonante, que conecta fuertemente con los oyentes
+                                y fomenta el compartir en plataformas sociales. Su inclusión en las listas de Spotify
+                                Wrapped destaca su impacto cultural.</p>
                         </div>
                     </div>
 
-                    <div class="collaboration-item">
-                        <div class="collaboration-photo-container">
-                            <img src= "picturesC/9.jpeg" alt="Portada STAY" class="collaboration-photo">
+                    <div class="collaboration-list__item collaboration-card">
+                        <div class="collaboration-card__photo-wrapper">
+                            <img src="ColaborationsPictures/5.png" alt="Portada Harley Quinn"
+                                class="collaboration-card__photo">
                         </div>
-                        <div class="collaboration-details">
-                            <h3>STAY</h3>
-                            <p><strong>Artistas:</strong> The Kid LAROI & Justin Bieber</p>
-                            <p><strong>Año de Lanzamiento:</strong> 2021</p>
-                            <p><strong>Género:</strong> Pop, Pop-Punk</p>
-                            <p class="notes">Notas: A pesar de haber sido lanzada en 2021, "STAY" sigue siendo una de las canciones más reproducidas en Spotify, con más de 3.42 mil millones de reproducciones. Su popularidad duradera es un testimonio de su melodía pegadiza, letras identificables y el poder combinado de las estrellas de ambos artistas, convirtiéndola en un elemento básico en listas de reproducción y rankings durante años.</p>
+                        <div class="collaboration-card__details">
+                            <h3 class="collaboration-card__title">Harley Quinn</h3>
+                            <p class="collaboration-card__info"><strong>Artistas:</strong> Fuerza Regida & Marshmello
+                            </p>
+                            <p class="collaboration-card__info"><strong>Año de Lanzamiento:</strong> 2024</p>
+                            <p class="collaboration-card__info"><strong>Género:</strong> Corridos Tumbados, EDM, Latin
+                                Urban</p>
+                            <p class="collaboration-card__notes">Notas: Esta colaboración fue un éxito significativo en
+                                2024, destacando por mezclar el género tradicional mexicano de corridos tumbados con
+                                música dance electrónica (EDM). Esta fusión de géneros ayudó a dominar las listas
+                                latinas, mostrando el creciente atractivo crossover de la música regional mexicana con
+                                otros sonidos globales.</p>
                         </div>
                     </div>
 
-                    <div class="collaboration-item">
-                        <div class="collaboration-photo-container">
-                            <img src="picturesC/10.jpeg" alt="Portada Sunflower" class="collaboration-photo">
+                    <div class="collaboration-list__item collaboration-card">
+                        <div class="collaboration-card__photo-wrapper">
+                            <img src="ColaborationsPictures/6.jpeg" alt="Portada Si no quieres no"
+                                class="collaboration-card__photo">
                         </div>
-                        <div class="collaboration-details">
-                            <h3>Sunflower</h3>
-                            <p><strong>Artistas:</strong> Post Malone & Swae Lee</p>
-                            <p><strong>Año de Lanzamiento:</strong> 2018 (de la banda sonora de Spider-Man: Into the Spider-Verse)</p>
-                            <p><strong>Género:</strong> Pop, Hip Hop, R&B</p>
-                            <p class="notes">Notas: Con más de 3.67 mil millones de reproducciones, "Sunflower" es una de las colaboraciones más exitosas en la historia de Spotify. Su increíble longevidad e inmensa popularidad se deben a su inclusión en la exitosa película "Spider-Man: Into the Spider-Verse", su melodía infecciosa y la mezcla perfecta del rapeo melódico de Post Malone y las distintivas voces de Swae Lee.</p>
+                        <div class="collaboration-card__details">
+                            <h3 class="collaboration-card__title">Si no quieres no</h3>
+                            <p class="collaboration-card__info"><strong>Artistas:</strong> Luis R Conriquez & Netón Vega
+                            </p>
+                            <p class="collaboration-card__info"><strong>Año de Lanzamiento:</strong> 2024</p>
+                            <p class="collaboration-card__info"><strong>Género:</strong> Regional Mexican, Corridos</p>
+                            <p class="collaboration-card__notes">Notas: Esta colaboración ascendió al Top 10 de la lista
+                                Hot Latin Songs de Billboard en 2024. Es un claro ejemplo del continuo dominio y
+                                evolución del género regional mexicano, particularmente los corridos, que han
+                                experimentado un auge masivo en popularidad en los últimos años.</p>
+                        </div>
+                    </div>
+
+                    <div class="collaboration-list__item collaboration-card">
+                        <div class="collaboration-card__photo-wrapper">
+                            <img src="ColaborationsPictures/7.jpeg" alt="Portada Sweet Dreams"
+                                class="collaboration-card__photo">
+                        </div>
+                        <div class="collaboration-card__details">
+                            <h3 class="collaboration-card__title">Sweet Dreams</h3>
+                            <p class="collaboration-card__info"><strong>Artistas:</strong> j-hope (BTS) & Miguel</p>
+                            <p class="collaboration-card__info"><strong>Año de Lanzamiento:</strong> 2025</p>
+                            <p class="collaboration-card__info"><strong>Género:</strong> K-Pop, R&B, Pop</p>
+                            <p class="collaboration-card__notes">Notas: Esta colaboración entre un destacado artista de
+                                K-Pop y un renombrado cantante de R&B tuvo un alto debut en la lista Billboard Hot 100.
+                                Este tipo de colaboraciones interculturales a menudo generan un interés significativo y
+                                éxito en las listas, uniendo diferentes bases de fans y estilos musicales.</p>
+                        </div>
+                    </div>
+
+                    <div class="collaboration-list__item collaboration-card">
+                        <div class="collaboration-card__photo-wrapper">
+                            <img src="ColaborationsPictures/8.jpeg" alt="Portada APT."
+                                class="collaboration-card__photo">
+                        </div>
+                        <div class="collaboration-card__details">
+                            <h3 class="collaboration-card__title">APT.</h3>
+                            <p class="collaboration-card__info"><strong>Artistas:</strong> Rosé (BLACKPINK) & Bruno Mars
+                            </p>
+                            <p class="collaboration-card__info"><strong>Año de Lanzamiento:</strong> 2024</p>
+                            <p class="collaboration-card__info"><strong>Género:</strong> Pop, Soul, R&B</p>
+                            <p class="collaboration-card__notes">Notas: Lanzada en 2024, esta canción mantuvo una fuerte
+                                presencia en las listas globales durante meses. Su éxito puede atribuirse a la potente
+                                combinación del atractivo global de Rosé en el K-Pop y la constante capacidad de Bruno
+                                Mars para crear éxitos, generando una mezcla de pop y soul que resonó con una amplia
+                                audiencia.</p>
+                        </div>
+                    </div>
+
+                    <div class="collaboration-list__item collaboration-card">
+                        <div class="collaboration-card__photo-wrapper">
+                            <img src="ColaborationsPictures/9.jpeg" alt="Portada STAY"
+                                class="collaboration-card__photo">
+                        </div>
+                        <div class="collaboration-card__details">
+                            <h3 class="collaboration-card__title">STAY</h3>
+                            <p class="collaboration-card__info"><strong>Artistas:</strong> The Kid LAROI & Justin Bieber
+                            </p>
+                            <p class="collaboration-card__info"><strong>Año de Lanzamiento:</strong> 2021</p>
+                            <p class="collaboration-card__info"><strong>Género:</strong> Pop, Pop-Punk</p>
+                            <p class="collaboration-card__notes">Notas: A pesar de haber sido lanzada en 2021, "STAY"
+                                sigue siendo una de las canciones más reproducidas en Spotify, con más de 3.42 mil
+                                millones de reproducciones. Su popularidad duradera es un testimonio de su melodía
+                                pegadiza, letras identificables y el poder combinado de las estrellas de ambos artistas,
+                                convirtiéndola en un elemento básico en listas de reproducción y rankings durante años.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="collaboration-list__item collaboration-card">
+                        <div class="collaboration-card__photo-wrapper">
+                            <img src="ColaborationsPictures/10.jpeg" alt="Portada Sunflower"
+                                class="collaboration-card__photo">
+                        </div>
+                        <div class="collaboration-card__details">
+                            <h3 class="collaboration-card__title">Sunflower</h3>
+                            <p class="collaboration-card__info"><strong>Artistas:</strong> Post Malone & Swae Lee</p>
+                            <p class="collaboration-card__info"><strong>Año de Lanzamiento:</strong> 2018 (de la banda
+                                sonora de Spider-Man: Into the Spider-Verse)</p>
+                            <p class="collaboration-card__info"><strong>Género:</strong> Pop, Hip Hop, R&B</p>
+                            <p class="collaboration-card__notes">Notas: Con más de 3.67 mil millones de reproducciones,
+                                "Sunflower" es una de las colaboraciones más exitosas en la historia de Spotify. Su
+                                increíble longevidad e inmensa popularidad se deben a su inclusión en la exitosa
+                                película "Spider-Man: Into the Spider-Verse", su melodía infecciosa y la mezcla perfecta
+                                del rapeo melódico de Post Malone y las distintivas voces de Swae Lee.</p>
                         </div>
                     </div>
 
@@ -176,11 +233,12 @@
     </main>
 
     <footer class="main-footer">
-        <div class="container">
-            <p>&copy; 2025 SonicWaves. Todos los derechos reservados.</p>
+        <div class="main-footer__container container">
+            <p class="main-footer__copyright">&copy; 2025 SonicWaves. Todos los derechos reservados.</p>
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
 </body>
+
 </html>
