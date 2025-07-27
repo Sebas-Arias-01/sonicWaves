@@ -1,0 +1,24 @@
+.album-card__cover {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+
+.artist-card__photo{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.collaboration-photo{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.song-card__cover{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
